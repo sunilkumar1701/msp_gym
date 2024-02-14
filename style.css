@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 /*--------------------------------------------------------------
 # nav bar section
@@ -431,6 +432,198 @@ section {
 
   .section-title span {
     font-size: 38px;
+  }
+}
+#about-us{
+  height: 150vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #ddd;
+}
+.pic{
+  height: auto;
+  width:  307px;
+  margin-top: 15%;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.skill{
+  height: 100vh;
+  display: flex;
+  background: #ececec;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  margin: 0 15px;
+  margin-top: 200px;
+  margin-left: 30%;
+  padding: 10px 20px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.container .skill-box{
+  width: 100%;
+  margin: 25px 0;
+}
+.skill-box .title{
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.skill-box .skill-bar{
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(0,0,0,0.1);
+}
+.skill-bar .skill-per{
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: #4070f4;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+.skill-per.infrastructure{
+  width: 80%;
+  animation-delay: 0.3s;
+}
+.skill-per.TRAINING{
+  width: 70%;
+  animation-delay: 0.4s;
+}
+.skill-per.EQUIPMENTS{
+  width: 90%;
+  animation-delay: 0.2s;
+}
+.skill-per.FEES{
+  width: 60%;
+  animation-delay: 0.5s;
+}
+@keyframes progress {
+  0%{
+      width: 0;
+      opacity: 1;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+.skill-per .tooltip{
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #4070f4;
+  z-index: 1;
+}
+.tooltip::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: #4070f4;
+  transform: translateX(-50%) rotate(45deg);
+
+}
+
+
+
+
+
+
+
+/* For screens up to 920px */
+@media screen and (max-width: 920px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .pic {
+    margin-top: -30%;
+  }
+  .text {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .container {
+    max-width: 85%; /* Adjusting the container width */
+    margin: 0 auto; /* Centering the container */
+  }
+}
+
+/* For screens up to 800px */
+@media screen and (max-width: 800px) {
+  .about {
+    padding: 60px 0;
+  }
+  .container {
+    margin-left: 35px; /* Resetting margin-left */
+    max-width: calc(100% - 70px); /* Adjusting container width */
+  }
+}
+
+/* For screens up to 370px */
+@media screen and (max-width: 370px) {
+  .about {
+    padding: 30px 0;
+  }
+  .container {
+    margin-left: 0; /* Resetting margin-left */
+    max-width: calc(100% - 30px); /* Adjusting container width */
+  }
+  .text h2 {
+    font-size: 60px;
+  }
+  .text h5 {
+    font-size: 18px;
+  }
+  .text p {
+    font-size: 16px;
   }
 }
 

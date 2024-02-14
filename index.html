@@ -2,87 +2,140 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-   <title> MSP GYM</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MSP GYM</title>
+    <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
-	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"/>
+	  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"/>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-<body>
-  <section id="hero">
-    <nav>
-      <div class="navbar">
-        <i class='bx bx-menu'></i>
-        <div class="logo"><a href="#">MSP GYM</a></div>
-        <div class="nav-links">
-          <div class="sidebar-logo">
-            <span class="logo-name">MSP GYM</span>
-            <i class='bx bx-x' ></i>
+  </head>
+  <body>
+    <!-- nav bar and home  section -->
+    <section id="hero">
+      <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="#">MSP GYM</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">MSP GYM</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;HOME</a></li>
+              <li>
+                <a href="#"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;GUIDE</a>
+                <i class='bx bxs-chevron-down guide-arrow arrow'></i>
+                <ul class="guide-sub-menu sub-menu">
+                  <li><a href="#">Workout Split</a></li>
+                  <li><a href="#">Videos</a></li>
+                </ul>
+              </li>
+              <li><a href="#about-us"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;ABOUT</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li>
+                <a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;LOGIN</a>
+                <i class='bx bxs-chevron-down login-arrow arrow '></i>
+                <ul class="login-sub-menu sub-menu">
+                  <li><a href="./login/master_login.html"><i class="fa fa-user-circle"></i>&nbsp;&nbsp;&nbsp;MASTER LOGIN</a></li>
+                  <li><a href="./login/gym_rat_login.html"><i class="fa fa-user-circle"></i>&nbsp;&nbsp;&nbsp;GYM RAT LOGIN</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <ul class="links">
-            <li><a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;HOME</a></li>
-            <li>
-              <a href="#"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;GUIDE</a>
-              <i class='bx bxs-chevron-down guide-arrow arrow  '></i>
-              <ul class="guide-sub-menu sub-menu">
-                <li><a href="#">Workout Split</a></li>
-                <li><a href="#">Videos</a></li>
-              </ul>
-            </li>
-        <li><a href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;ABOUT</a></li>
-            <li><a href="#">CONTACT US</a></li>
-        <li>
-              <a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;LOGIN</a>
-              <i class='bx bxs-chevron-down login-arrow arrow '></i>
-              <ul class="login-sub-menu sub-menu">
-          <li><a href="./login/master_login.html"><i class="fa fa-user-circle"></i>&nbsp;&nbsp;&nbsp;MASTER LOGIN</a></li>
-                <li><a href="./login/gym_rat_login.html"><i class="fa fa-user-circle"></i>&nbsp;&nbsp;&nbsp;GYM RAT LOGIN</a></li>
-              </ul>
-            </li>
-          </ul>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+          </div>
         </div>
-        <div class="search-box">
-          <i class='bx bx-search'></i>
-          <div class="input-box">
-            <input type="text" placeholder="Search...">
-          </div>
+      </nav>
+      <div class="image-data">
+        <h2>Get Your Body Fittness</h2>
+        <a href="#about-us" class="button">About Us</a>
+      </div>
+    </section>
+    <!-- End of nav bar and home  section -->
+    <section id="about-us">
+      <div class="about">
+          <img src="./img/attractive-young-woman-her-trainer-running-treadmill-gym (1).jpg" class="pic">
+        <div class="text">
+          <h2>About Us</h2>
+          <h5>MSP GYM</span></h5>
+            <p>MSP Gym, where fitness meets friendliness! At MSP Gym, we pride ourselves on providing a welcoming and supportive environment for individuals of all fitness levels. Our state-of-the-art facility is fully equipped with top-of-the-line exercise machines, free weights, and cardio equipment to help you achieve your fitness goals. At MSP Gym, we're more than just a place to work out.we're a community dedicated to helping you become the best version of yourself. Join us today and experience the difference at MSP Gym. Your fitness journey starts here!</p>
         </div>
       </div>
-    </nav>
-    <div class="image-data">
-      <h2>Get Your Body Fittness</h2>
-      <a href="#" class="button">About Us</a>
-    </div>
-  </section>
-  <script src="imgslider.js"></script>
-</body>
-<footer class="footer">
-  <ul class="social-icon">
-    <li class="social-icon__item"><a class="social-icon__link" href="#">
-        <ion-icon name="logo-facebook"></ion-icon>
-      </a></li>
-    <li class="social-icon__item"><a class="social-icon__link" href="#">
-        <ion-icon name="logo-twitter"></ion-icon>
-      </a></li>
-    <li class="social-icon__item"><a class="social-icon__link" href="#">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a></li>
-    <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/msp_fitness_gym?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a></li>
-  </ul>
-  <ul class="menu">
-    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-    <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-    <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      <div class="container">
+          <div class="skill-box">
+              <span class="title">INFRASTRUCTURE</span>
+              <div class="skill-bar">
+                  <span class="skill-per infrastructure">
+                      <span class="tooltip">80%</span>
+                  </span>
+              </div>
+          </div>
+  
+          <div class="skill-box">
+              <span class="title">TRAINING</span>
+  
+              <div class="skill-bar">
+                  <span class="skill-per TRAINING">
+                      <span class="tooltip">70%</span>
+                  </span>
+              </div>
+          </div>
+          <div class="skill-box">
+              <span class="title">EQUIPMENTS</span>
+  
+              <div class="skill-bar">
+                  <span class="skill-per EQUIPMENTS">
+                      <span class="tooltip">90%</span>
+                  </span>
+              </div>
+          </div>
+          <div class="skill-box">
+              <span class="title">FEES</span>
+  
+              <div class="skill-bar">
+                  <span class="skill-per FEES">
+                      <span class="tooltip">60%</span>
+                  </span>
+              </div>
+          </div>
+      </div>
+    </section>
+  </body>
 
-  </ul>
-  <p>&copy;2024 MSP GYM | All Rights Reserved</p>
-</footer>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <!-- Footer section -->
+  <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/msp_fitness_gym?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#about-us">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+    </ul>
+    <p>&copy;2024 MSP GYM | All Rights Reserved</p>
+  </footer>
+  <!-- End of Footer section -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="main.js"></script>
 </html>
