@@ -1,19 +1,39 @@
-// Function to toggle the visibility of the menu
-function toggleMenu() {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('active');
-    menuButton.classList.toggle('active');
-
-    // If the menu is now active, apply smooth scroll to the top of the menu
-    if (menu.classList.contains('active')) {
-        // Smooth scroll to the top of the menu
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
+// search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".guide-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".login-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
 }
 
-// Add an event listener to the menu toggle button
-const menuButton = document.getElementById('menuButton');
-menuButton.addEventListener('click', toggleMenu);
+
+
+

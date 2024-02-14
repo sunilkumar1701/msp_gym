@@ -1,38 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Webpage Design</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <title> MSP GYM</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Boxicons CDN Link -->
+	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <img src="../img/3d-gym-equipment.jpg" alt="logo"width="100" height="100">
-            </div>
-
-            <!-- Add a button to trigger the menu -->
-            <!-- Your menu toggle button -->
-            <button id="menuButton" aria-label="Menu">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
-  
-
-            <!-- Your menu -->
-            <div class="menu" id="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">GUIDE</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">MEMO</a></li>
-                    <li><a href="#">LOGIN</a></li>
-                </ul>
-            </div>
-        </div> 
+  <section id="hero">
+    <nav>
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo"><a href="#">MSP GYM</a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">MSP GYM</span>
+            <i class='bx bx-x' ></i>
+          </div>
+          <ul class="links">
+            <li><a href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;&nbsp;HOME</a></li>
+            <li>
+              <a href="#"><i class="fa fa-book"></i>&nbsp;&nbsp;&nbsp;GUIDE</a>
+              <i class='bx bxs-chevron-down guide-arrow arrow  '></i>
+              <ul class="guide-sub-menu sub-menu">
+                <li><a href="#">Workout Split</a></li>
+                <li><a href="#">Videos</a></li>
+              </ul>
+            </li>
+        <li><a href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;ABOUT</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        <li>
+              <a href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;LOGIN</a>
+              <i class='bx bxs-chevron-down login-arrow arrow '></i>
+              <ul class="login-sub-menu sub-menu">
+          <li><a href="./login/master_login.html"><i class="fa fa-user-circle"></i>&nbsp;&nbsp;&nbsp;MASTER LOGIN</a></li>
+                <li><a href="./login/gym_rat_login.html"><i class="fa fa-user-circle"></i>&nbsp;&nbsp;&nbsp;GYM RAT LOGIN</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search...">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="image-data">
+      <h2>Get Your Body Fittness</h2>
+      <a href="#" class="button">About Us</a>
     </div>
-    <script src="./main.js"></script>
+  </section>
+  <script src="imgslider.js"></script>
 </body>
+
 </html>
